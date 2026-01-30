@@ -1,0 +1,20 @@
+Model parameters: total=7,457,127, trainable=7,457,127
+------------------------
+Début plot MSE per frame
+Figure sauvegardée dans /gpfs/users/godardc/ztest/MSE/train_mse_per_frame.png
+Figure sauvegardée dans /gpfs/users/godardc/ztest/MSE/val_mse_per_frame.png
+Figure sauvegardée dans /gpfs/users/godardc/ztest/MSE/test_mse_per_frame.png
+Fin plot MSE per frame
+------------------------
+Test prédicteur naïf
+Début plot MSE per frame
+Figure sauvegardée dans /gpfs/users/godardc/ztest/MSE/naive_train_mse.png
+Figure sauvegardée dans /gpfs/users/godardc/ztest/MSE/naive_val_mse.png
+Figure sauvegardée dans /gpfs/users/godardc/ztest/MSE/naive_test_mse.png
+Figure sauvegardée : /gpfs/users/godardc/ztest/MSE/naive_vs_clstm_all_splits.png
+Fin plot MSE per frame
+fin test prédicteur naïf
+------------------------
+Début génération vidéos
+Fin génération vidéos
+------------------------

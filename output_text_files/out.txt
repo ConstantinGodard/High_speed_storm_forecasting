@@ -1,0 +1,50 @@
+
+=== Import CLSTM forecaster ===
+OK : CLSTM_M importé
+OK : video_player importé
+Model parameters: total=7,457,127, trainable=7,457,127
+Model parameters: total=7,457,127, trainable=7,457,127
+
+=== Initialisation du Forecaster CLSTM ===
+Model parameters: total=7,457,127, trainable=7,457,127
+Forecaster initialisé
+Train idx: [29 15 24 17  8  9 30 25 12  0  4 16  5 13 11 23  1  2 26  3 21 27 22 18
+ 31 20]
+Val idx:   [ 7 10 14]
+Test idx:  [28 19  6]
+
+=== Construction des DataLoaders ===
+Scaler mean min/max : -11.349190256154214 -4.952807773448476
+Scaler var min/max  : 0.2201717144295249 10.730258482011168
+x_sample min/max : -5.231813430786133 2.467932939529419
+y_sample min/max : -5.231813430786133 2.467932939529419
+Scaler stats:
+ mean shape : (60960,)
+ var shape  : (60960,)
+Scaler OK
+
+Test loader OK
+Scaler utilisé dans test : StandardScaler()
+
+=== Lancement de l'entraînement CLSTM ===
+[Epoch 0] horizon = 5
+
+Epoch 1           | warmup_len=15 | horizon=5
+Train: loss=0.7860 | f1=0.8682 | f50=0.7742 | f99=0.7271
+Val:   loss=1.6165 | f1=1.3736 | f50=1.6079 | f99=1.8755
+Val_fixed: loss=1.2264         | N_seq_fixed = 32
+-- loss_exp=0.7860 | Current lr=1.0e-04     | tf_ratio=1.00 
+-------------------------------------------------------------
+Fin entraînement
+Longueur train_hist : 1
+Longueur val_hist   : 1
+Loss plot saved to runs/27_01__11h50/MSE/CLSTM_rollout_loss_plot.png
+Courbes de loss sauvegardées
+Figure sauvegardée dans Loss_per_frame.png
+
+=== Évaluation finale sur test ===
+Batch shapes :
+ x : torch.Size([1, 99, 60960])
+ y : torch.Size([1, 99, 60960])
+Début plot MSE per frame
+slurmstepd: error: *** JOB 11481788 ON ruche-gpu16 CANCELLED AT 2026-01-27T11:51:48 ***
